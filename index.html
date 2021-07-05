@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assessment</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .sidebar {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(245, 245, 245);
+            overflow-x: hidden;
+            padding-top: 16px;
+            }
+
+            /* Style sidebar links */
+            .sidebar a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #818181;
+            display: block;
+            }
+
+            /* Style links on mouse-over */
+            .sidebar a:hover {
+            color: #f1f1f1;
+            }
+
+            /* Style the main content */
+            .main {
+            margin-left: 160px; /* Same as the width of the sidenav */
+            padding: 0px 10px;
+            }
+
+            /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+            @media screen and (max-height: 450px) {
+            .sidebar {padding-top: 15px;}
+            .sidebar a {font-size: 18px;}
+            }
+
+            h5 {
+                text-decoration-color: black;
+                margin-left: 200px;
+            }
+            /* input {
+                margin-left: 400px;
+                width: 500px;
+            }
+
+            input::placeholder {
+                font-weight: bold;
+                color: black;
+            } */
+            p {
+                font-weight: bold;
+                margin-left: 400px;
+                width: 500px;
+            }
+
+            #corners {
+            margin-left: 300px;
+            border-radius: 25px;
+            background: white;
+            padding: 15px; 
+            width: 800px;
+            height: 10px;  
+            }
+
+            .box {
+                background-color: white;
+                width: 30px;                
+                padding: 50px;
+                text-align-last: auto;
+                margin-left: 300px;
+            }
+        </style>
+    </head>
+    <body style="background-color: rgb(231, 220, 220);">
+        <header style="background-color: white;"><br><br><br><br><br><br></header>
+        <!-- <div style="background-color: white;">
+            <br><br><br>
+        </div> -->
+
+        <div class="sidebar">
+            <a href="#home"><i class="fa fa-universal-access fa-2x"></i></a>
+            <a href="#services"><i class="fa fa-user-o"></i> Services</a>
+            <a href="#clients"><i class="fas fa-chalkboard"></i> Clients</a>
+            <a href="#contact"><i class="fa fa-gear"></i> Contact</a>
+          </div>
+          <!-- <br><br><br> -->
+          <h5 class="fa fa-play">    Videos</h5>
+          <!-- <input type="text" placeholder="Insert URL here"> -->
+          <p id="corners">Insert URL here</p>
+          <h6 style="text-align-last: center; font-weight: bold;">or</h6>
+          <div class="box">
+              Upload
+          </div>
+    </body>
+</html>
